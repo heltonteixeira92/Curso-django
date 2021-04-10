@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,13 +35,13 @@
           </div>
       </nav>
 
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
 
                     <div class="jumbotron">
                         <h2>
-                            Curso de Python com Lucioano Ramalho
+                            Curso de Python com Luciano Ramalho
                         </h2>
                         <p>
                             Confira em breve mais informações sobre o curso que será ministrado pelo autor do livro
@@ -74,5 +74,28 @@
                 </div>
             </div>
         </div>
+  <footer class="main-footer mt-5 pt-4 text-light">
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <h3>Entre em Contato</h3>
+                  <address>
+                      +55 11 5511-1234
+                      <br>
+                      <a href="mailto:remalho@python.pro.br" class="text-light">remalho@python.pro.br</a>
+                  </address>
+              </div>
+          </div>
+      </div>
+      <div class="rights pb-4">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      {% now 'Y' %} Python Pro. Todos direitos reservados.
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
   </body>
 </html>
