@@ -16,6 +16,7 @@ def video(db):
 def resp(client, video):
     return client.get(reverse('aperitivos:video', args=(video.slug,)))
 
+
 @pytest.fixture
 def resp_video_nao_encontrado(client, video):
     return client.get(reverse('aperitivos:video', args=(video.slug+'video_nao_existente',)))
