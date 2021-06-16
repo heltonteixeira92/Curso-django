@@ -5,6 +5,7 @@ from pypro.django_assertions import assert_contains
 import pytest as pytest
 from model_mommy import mommy
 
+
 @pytest.fixture
 def videos(db):
     return mommy.make(Video, 3)
