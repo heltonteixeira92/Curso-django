@@ -37,7 +37,7 @@ def test_titulo(resp, modulos: List[Modulo]):
         assert_contains(resp, modulo.titulo)
 
 
-def test_descricao(resp, modulo: List[Modulo]):
+def test_descricao(resp, modulos: List[Modulo]):
     for modulo in modulos:
         assert_contains(resp, modulo.descricao)
 
