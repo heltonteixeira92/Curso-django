@@ -42,14 +42,16 @@
               </ul>
               {% if user.is_authenticated %}
                 <ul class="navbar-nav  mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    {{ user.first_name }}
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <button type="button" class="dropdown-item" >Sair</button></li>
-                  </ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      {{ user.first_name }}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <div class="dropdown-item">
+                        <a class="btn btn-danger" href="{% url 'logout' %}" >Sair</a>
+                        </div>
+                    </ul>
                 </li>
               </ul>
               {% else %}
