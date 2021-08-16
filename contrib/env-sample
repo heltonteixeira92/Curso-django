@@ -12,7 +12,7 @@ SENTRY_DSN
 
 # config de email
 
-EMAIL_BACKEND = django.core.mail.backends.console.EmailBackend
+EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
 EMAIL_HOST=localhost
 EMAIL_PORT=25
 EMAIL_HOST_USER=
